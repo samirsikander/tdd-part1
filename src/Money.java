@@ -4,16 +4,18 @@ public abstract class Money {
 	protected int amount;
 	protected String currency;
 	
-	Money(int amount, String currency) {
-		this.amount = amount;
-		this.currency = currency;
-		}
-	
-	abstract Money times(int multiplier);
-	
 	String currency() {
 	return currency;
 	}
+	
+	Money times(int amount) {
+		return null;
+		}
+	
+	public String toString() {
+		return amount + " " + currency;
+		}
+	
 	
 	public boolean equals(Object object) {
 		Money money = (Money) object;
